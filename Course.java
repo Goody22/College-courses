@@ -1,55 +1,36 @@
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 public class Course
 {
-    private  String title;
-    private  int hours;
-    private  String grade;
-    private  int id;
 
-    public Course(String title, String grade, int id, int hours){
-        this.title = title;
-        this.grade = grade;
-        this.id = id;
-        this.hours = hours;
+    private String Course;
+    private int CreditHours;
+    private char Grade;
+
+    public String getCourse()
+    {
+        return this.Course;
     }
 
-    public void setGrade(String g){
-        grade = g;
+    public void setCourse(String ID){
+        this.Course = ID;
     }
 
-    public String getGrade(){
-        return grade;   
+    public void setCreditHours(int cr){
+        this.CreditHours = cr;
     }
 
-    public void setTitle(String t){
-        title = t;   
+    public int getCreditHours(){
+        return this.CreditHours;
     }
 
-    public String getTitle() {
-        return title;
+    public void setGrade(char gr){
+        this.Grade = gr;
     }
 
-    public void setId(int i){
-        id = i;
+    public char getGrade(){
+        return this.Grade;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setHours(int h){
-        hours = h;
-    }
-
-    public int getHours() {
-        return hours;
-    }
-
-    public static void main(String[] arg){
-        String result;
-        result=JOptionPane.showInputDialog(null," what is your name");
-        JOptionPane.showMessageDialog(null,"Hello"+ result+"!");
-
-    }
+    
 }
 
